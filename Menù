@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+</style>
+</head>
 <body>
 
 <ul>
@@ -9,8 +22,5 @@
   <li><a href="#about">About</a></li>
 </ul>
 
-<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
-
 </body>
 </html>
-
