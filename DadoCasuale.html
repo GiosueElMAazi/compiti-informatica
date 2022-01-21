@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,10 @@
    
     <button onclick="Lancia10Dadi(10)">Lancia 10 dadi</button>
     <p id="output2"></p>
-   
+
+    <button onclick="Lancia1000Dadi(1000)">Lancia 1000 dadi</button>
+    <p id="output3"></p> 
+
     <script>
         function LancioDado() {
             let dado=0;
@@ -35,7 +38,24 @@
             }
             document.getElementById("output2").innerHTML=str;
         }
+
+        function Lancia1000Dadi(n) {
+            let dado=0;
+            let casuale=0;
+            let str="";
+            for(let i=0;i<n;i++)
+            {
+            casuale=Math.random();
+            dado=Math.round(casuale*5)+1;
+            str=str+" "+ dado;  
+            }
+            document.getElementById("output3").innerHTML=str;
+            
+        }
+        
     </script>
 
+</body>
+</html>
 </body>
 </html>
